@@ -9,9 +9,8 @@ class driver {
         this.noSim = noSim;
     }
 
-    @Override
     public String toString() {
-        return this.nama; // Mengubah agar mencetak nama supir
+        return this.nama; 
     }
 }
 
@@ -19,13 +18,13 @@ class kendaraan {
     public String platNomor;
     public int jumlahPenumpang;
     public int maxPenumpang;
-    public driver supir; // Menambah properti supir
+    public driver supir; 
 
-    public kendaraan(String pn, int max, driver supir) { // Menambah parameter supir dalam konstruktor
+    public kendaraan(String pn, int max, driver supir) { 
         this.platNomor = pn;
         this.jumlahPenumpang = 0;
         this.maxPenumpang = max;
-        this.supir = supir; // Inisialisasi properti supir
+        this.supir = supir; 
     }
 
     public void cekPenumpang() {
@@ -126,7 +125,7 @@ public class LK02 {
         driver d2 = new driver("Gantang", "12345");
 
         truk t1 = new truk("N 1234 YY", 2, 50, d1); 
-        bus b1 = new bus("B 4321 GG", 15, 50000, d2); // Menambahkan objek driver d2 sebagai supir bus
+        bus b1 = new bus("B 4321 GG", 15, 50000, d2);
       
         Scanner scan = new Scanner(System.in);
         // Menampilkan menu
@@ -143,7 +142,7 @@ public class LK02 {
                 int pilihantruk;
                 do {
                     System.out.println("Selamat datang di dalam Truk");
-                    System.out.println(t1.supir.nama + " akan menjadi supir didalam kendaraan ini"); // Mengubah agar mencetak nama supir
+                    System.out.println(t1.supir.nama + " akan menjadi supir didalam kendaraan ini"); 
                     System.out.println("Truk ini memiliki plat nomor " + t1.platNomor + ", Kapasitas penumpang sebanyak " + t1.maxPenumpang + " orang, dan kapasitas muatan sebesar " + t1.kapasitas + " Kg");
                     System.out.println("Menu:");
                     System.out.println("1. penumpang Naik");
@@ -195,7 +194,7 @@ public class LK02 {
                 int pilihanBus;
                 do {
                     System.out.println("Selamat datang di dalam bus");
-                    System.out.println(b1.supir.nama + " akan menjadi supir didalam kendaraan ini"); // Mengubah agar mencetak nama supir
+                    System.out.println(b1.supir.nama + " akan menjadi supir didalam kendaraan ini"); 
                     System.out.println("Bus ini memiliki plat nomor " + b1.platNomor + ", Kapasitas penumpang sebanyak " + b1.maxPenumpang + " orang, dengan tarif sebesar Rp." + b1.tarif + " per orangnya");
                     System.out.println("Menu:");
                     System.out.println("1. penumpang Naik");
