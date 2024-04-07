@@ -186,7 +186,7 @@ public class LK02 {
                             System.out.println("Terima kasih. Program berhenti.");
                             break;
                         default:
-                            System.out.println("Pilihan tidak valid. Silakan pilih antara 1-4.");
+                            System.out.println("Pilihan tidak valid. Silakan pilih antara 1-6.");
                     }
                 } while (pilihantruk != 6);
                 break;
